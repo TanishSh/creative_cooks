@@ -1,0 +1,236 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+
+header{
+	background-color: #6b6e66; 
+  	background-image: linear-gradient(to top right, rgba(0, 255, 251, 0.6), rgba(93, 0, 255, 0.7)), url("images/food.png");
+  	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	line-height: 60 px;
+}
+
+nav ul{
+	float: right;
+	margin: 0;
+	padding-right: 42px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 25px 32px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+.logo {
+	height: 70px;
+	float: left;
+	margin: 8px 30px;
+	width: 70px;
+}
+
+nav.black{
+	 background: #000;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+down {
+  display: none;
+  position: absolute;
+  min-width: 135px;
+  text-align: center;
+  z-index: 1;
+}
+
+down.black {
+  display: none;
+  position: absolute;
+  min-width: 135px;
+  text-align: center;
+  z-index: 1;
+  background: #000;
+}
+
+down a {
+  color: pink;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-buttons a:hover {color: red;}
+
+.dropdown:hover down {display: block;}
+
+.dropdown:hover down.black {display: block;}
+
+.dropdown:hover .drop {color: pink;}
+
+.searchbox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #2f3640;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+
+.searchbox:hover > .search-txt{
+	width: 240px;
+	padding: 0 6px;
+}
+
+.searchbox:hover > .searchbtn{
+	background: white;
+}
+
+.searchbtn{
+	color: #e84118;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 110px;
+}
+
+heading{
+	position: fixed;
+	bottom: 560px;
+ 	right: 800px;
+ 	width: 500px;
+ 	color: white;
+ 	font-family:"Dancing Script", cursive;
+ 	font-size: 48px;
+ 	text-decoration: underline;
+}
+
+
+.food1{
+	position: fixed;
+	bottom: 200px;
+ 	right: 1000px;
+ 	width: 300px;
+ 	height: 350px;
+}
+
+.food2{
+	position: fixed;
+	bottom: 200px;
+ 	right: 650px;
+ 	width: 300px;
+ 	height: 350px;
+}
+
+.food3{
+	position: fixed;
+	bottom: 200px;
+ 	right: 300px;
+ 	width: 300px;
+ 	height: 350px;
+}
+
+.overlay1:hover .food1 {
+	transition: .5s ease;
+  	opacity: 0.5;
+  	cursor: pointer;
+}
+
+.overlay2:hover .food2 {
+	transition: .5s ease;
+  	opacity: 0.5;
+  	cursor: pointer;
+}
+
+.overlay3:hover .food3 {
+	transition: .5s ease;
+  	opacity: 0.5;
+  	cursor: pointer;
+}
+
+h4 {
+	position: fixed;
+	bottom: 50px;
+ 	right: 800px;
+ 	width: 500px;
+ 	color: white;
+ 	font-family:"Dancing Script", cursive;
+ 	font-size: 48px;
+ 	text-decoration: underline;
+}
+
+.food4{
+	position: fixed;
+	bottom: 10px;
+ 	right: 1100px;
+ 	width: 200px;
+ 	height: 100px;
+}
+
+.food5{
+	position: fixed;
+	bottom: 10px;
+ 	right: 800px;
+ 	width: 200px;
+ 	height: 100px;
+}
+
+.food6{
+	position: fixed;
+	bottom: 10px;
+ 	right: 500px;
+ 	width: 200px;
+ 	height: 100px;
+}
+
+.overlay4:hover .food4 {
+	transition: .5s ease;
+  	opacity: 0.5;
+  	cursor: pointer;
+}
+
+.overlay5:hover .food5 {
+	transition: .5s ease;
+  	opacity: 0.5;
+  	cursor: pointer;
+}
+
+.overlay6:hover .food6 {
+	transition: .5s ease;
+  	opacity: 0.5;
+  	cursor: pointer;
+}

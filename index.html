@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Old+Standard+TT:ital@1&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/creativecooks.png">
+        <title>CC</title>
+    </head>
+    <body>
+        <div id="main" class="main">
+            <h1>CreativeCooks<br><span id="header" class="sub">Create, Learn, and Share your favourite recipes</span></h1>
+            <h2></h2>
+            <div id="id-buttons">
+                <button id="signup-btn" onclick="login();">Log in</button>
+                <button id="login-btn" onclick="signup();">Sign up</button>
+            </div>
+        </div>
+
+        <div class="sector" id="login" style="display: none;">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Go</button>
+        </div>
+
+        <div class="sector" id="signup" style="display:none; margin-bottom:100px;">
+            <h2>Signup</h2>
+
+            <form onsubmit="continueSignup();return false;">
+
+				<input required type="text" placeholder="First Name" id="firstname">
+                <input required type="text" placeholder="Last Name" id="lastname">
+                <input required type="text" placeholder="Username" id="username">
+                <input required type="email" placeholder="Email" id="email">
+                <input required type="password" placeholder="Password" id="password" minlength="6">
+                <input required type="password" placeholder="Repeat Password" id="repeat-password" minlength="6">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Old+Standard+TT:ital@1&display=swap" rel="stylesheet">
+        <link rel="icon" href="../images/creativecooks.png">
+        <title>CC</title>
+    </head>
+    <body style="height: 100vh; justify-content: center;">
+        <div class="box">
+            <h2>Share your favorite recipes</h2>
+
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <input required type="text" name="dish" id="name" placeholder="Name of the Dish/Recipe">
+                <textarea required type="text" name="message" id="instruct" placeholder="Steps to make this Dish" style="resize:none;" rows=10></textarea>
+
+
+                <h3 style="margin-bottom: 0;">Pictures/Video of Dish (required)</h3>
+                <input required type="file" name = "file">
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+        <!-- <script>
+            // put this in the form tag: id="myForm" class="form"
+
+            const myForm = document.getElementById("myForm");
+
+            myForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                const request = new XMLHttpRequest();
+
+                request.open("post", "login.php");
+                request.onload= function(){
+                    console.log(request.responseText);
+                }
+
+                request.send(new FormData(myForm));
+            })
+
+        </script> -->
+    </body>
+</html>

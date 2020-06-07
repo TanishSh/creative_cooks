@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="browsestyle.css">
+        <link rel="icon" href="images/creativecooks.png">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <title>CC</title>
+    </head>
+    <body>
+
+		<header>
+    		<nav>
+    			<img class="logo" src="images/creativecooks.png">
+    			<div class="menu">
+    				<ul>
+    					<div class="searchbox">
+    					
+    						<input class="search-txt" type="text" placeholder="Type to search"  id="search">
+    						<a class="searchbtn" href="#"><i class="fa fa-search"></i></a>
+    						
+    					</div>
+    					
+    					<li><a href="browse.html"> Home</a></li>
+    					<li><a href="dashboard/dashboard.html"> Upload</a></li>
+    					
+    					<div class="dropdown">
+    					
+    						<li><a class="drop"> Username</a></li>
+  							
+  							<div class="dropdown-buttons">
+  								<down>
+   									<a href="profile.html">Profile</a>
+    								<a href="favourites.html">Favourites</a>
+    								<a href="index.html">Log out</a>
+    							</down>
+    							
+  							</div>
+  						</div>
+    					
+    				</ul>
+    			</div>
+    		</nav>
+    		
+    		
+    		<heading>
+    			<h2>My Profile</h2>
+    		</heading>
+    		
+    		<div class="prof">
+    			<img class="profile" src="images/profile.png"> 
+    		</div>			
+    		
+    	</header>
+
+    	<script type="text/javascript">
+    	
+    		$(window).on("scroll", function(){
+    			if($(window).scrollTop()){
+    				$("nav").addClass("black");
+    				$("down").addClass("black");
+    			}
+    			else{
+    				$("nav").removeClass("black");
+    				$("down").removeClass("black");
+    			}
+    		})
+    		
+    	</script>
+    	
+    </body>
+</html>

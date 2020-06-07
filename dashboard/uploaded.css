@@ -1,0 +1,12 @@
+p.title {
+    color: rgb(189, 33, 163);
+    font-family: "Old Standard TT", serif;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+p{
+    color: rgb(255, 97, 229);
+    font-family: "Old Standard TT", serif;
+    font-size: 20px;
+}
